@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>Carrusel</title>
+        <meta charset="UTF-8">
+        </head>
+    <body>
+    <center>
+    <h1>Pasa el cursor por la imagen</h1>
+    <img  id="carrusel" src="https://image.spreadshirtmedia.net/image-server/v1/compositions/120357280/views/1,width=300,height=300,appearanceId=1,backgroundColor=E8E8E8,version=1484810225/number-one-numero-uno-camisetas-camiseta-premium-nino.jpg" width="250" onmouseover="pasar()" />
+      </center>s
+      <!--Script-->
+        <script type="text/javascript">
+        var contador = 0;
+        var imagenes = ["https://image.spreadshirtmedia.net/image-server/v1/compositions/120357280/views/1,width=300,height=300,appearanceId=1,backgroundColor=E8E8E8,version=1484810225/number-one-numero-uno-camisetas-camiseta-premium-nino.jpg",
+    "http://img.freepik.com/iconos-gratis/el-numero-dos-en-un-circulo_318-72399.jpg?size=338&ext=jpg", "http://img.freepik.com/iconos-gratis/el-numero-tres-en-un-circulo_318-72339.jpg?size=338&ext=jpg"];
+
+function pasar() {
+    if (contador == imagenes.length-1) {
+        contador = 0;
+    } else {
+        contador += 1;
+    }
+    document.getElementById("carrusel").src = imagenes[contador];
+}
+
+
+        </script>
+      </body>
+</html>

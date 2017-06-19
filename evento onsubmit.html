@@ -1,0 +1,29 @@
+<html>
+<head>
+
+</head>
+<body>
+<center>
+<h1>Ingresa tu edad para ver si puedes entrar al ejercito</h1>
+<form name="formulario" id="formulario" onsubmit="comprobar()">
+  Tu edad:   <input type="text" id="edad" name="edad" size="7" maxlength="2"><br><br>
+              <input type="submit" value="   Enviar   ">
+</form>
+</center>
+
+<script language="javascript">
+function comprobar()
+{
+   var edad= (parseInt(document.formulario.edad.value));
+
+   if (edad >= 18 && edad <= 25)
+   {
+      alert("Puedes enlistarte en el ejercito");
+      
+   }else{alert("No puedes enlistarte en el ejercito");}
+   
+   
+}
+</script>
+</body>
+</html>
